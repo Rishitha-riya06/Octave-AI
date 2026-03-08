@@ -2,7 +2,7 @@
 class OctaveAPI {
     constructor() {
         // Use environment variable or fallback to localhost for development
-        this.baseURL = 'https://octave-ai.onrender.com/api';
+        this.baseURL = 'https://octave-ai.onrender.com';
     }
 
     // Analyze project description with preferences and generate script
