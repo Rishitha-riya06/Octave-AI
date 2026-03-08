@@ -11,7 +11,7 @@ class OctaveAPI {
             console.log('🔍 Making API call to:', `${this.baseURL}/analyze-with-preferences`);
             console.log('📤 Request data:', { description, tone, use_case: useCase });
 
-            const response = await fetch(`${this.baseURL}/analyze-with-preferences`, {
+            const response = await fetch(`${this.baseURL}/api/analyze-with-preferences`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ class OctaveAPI {
     // Optimize voice prompt for better results
     async optimizePrompt(metaPrompt, description) {
         try {
-            const response = await fetch(`${this.baseURL}/optimize-prompt`, {
+            const response = await fetch(`${this.baseURL}/api/optimize-prompt`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ class OctaveAPI {
             console.log('🔍 Making API call to:', `${this.baseURL}/voices`);
             console.log('📤 Request data:', projectData);
 
-            const response = await fetch(`${this.baseURL}/voices`, {
+            const response = await fetch(`${this.baseURL}/api/voices`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
