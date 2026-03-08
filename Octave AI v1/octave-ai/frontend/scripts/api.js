@@ -103,7 +103,7 @@ class OctaveAPI {
     // Generate audio sample
     async generateAudioSample(voiceId, text) {
         try {
-            const response = await fetch(`${this.baseURL}/generate-audio`, {
+            const response = await fetch(`${this.baseURL}/api/generate-audio`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
