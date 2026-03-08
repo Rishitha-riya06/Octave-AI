@@ -18,13 +18,7 @@ from routes.generate_voices import voices_bp
 app = Flask(__name__)
 
 # Enable CORS for frontend communication
-CORS(app, origins=[
-    "http://localhost:8000", 
-    "http://localhost:3000",
-    "https://*.vercel.app", 
-    "https://frontend-febrjbddz-lotfullah-muslimwals-projects.vercel.app",
-    "*"  # Allow all origins for now - restrict in production
-])
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Register blueprints
 app.register_blueprint(text_bp, url_prefix='/api')
