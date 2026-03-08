@@ -2,9 +2,7 @@
 class OctaveAPI {
     constructor() {
         // Use environment variable or fallback to localhost for development
-        this.baseURL = window.location.hostname === 'localhost'
-            ? 'http://localhost:5000/api'
-            : 'https://backend-eh7ldzeu5-lotfullah-muslimwals-projects.vercel.app/api';
+        this.baseURL = 'https://octave-ai.onrender.com/api';
     }
 
     // Analyze project description with preferences and generate script

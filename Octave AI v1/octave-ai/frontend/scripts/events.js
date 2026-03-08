@@ -217,8 +217,7 @@ class EventManager {
 
     // Show voice information when audio is not available
     showVoiceInfo(voiceName, provider) {
-        const message = `${voiceName} from ${provider}\n\nThis would play a sample of your generated script using the ${voiceName} voice. Audio samples will be available when connected to the backend API.`;
-        alert(message);
+        console.log(`${voiceName} from ${provider}`);
     }
 
     // Stop all currently playing audio
